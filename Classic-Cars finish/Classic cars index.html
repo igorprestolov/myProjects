@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Special+Elite&display=swap" rel="stylesheet">  
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+
+    <navbar class="navbar">
+        <a href="#home" class="navbar-link">Home</a>
+        <a href="#popular-cars" class="navbar-link">Popular Cars</a>
+        <a href="#video-gallery" class="navbar-link">Video Gallery</a>
+        <a href="#home" class="navbar-link">Home</a>
+        <a href="#home" class="navbar-link">Home</a>
+    </navbar>
+
+    <div class="menu-icon center">
+        <div class="menu-bar"></div>
+        <div class="menu-bar"></div>
+    </div>
+
+    <div class="wrapper">
+        <section class="section-1 center" id="home">
+            <h1 class="section-1-heading heading">Classic Cars</h1>
+            <img src="images/car-section1.png" alt="image" class="section-1-image">
+        </section>
+    </div>
+
+    <div class="wrapper">
+        <section class="section-2 center" id="popular-cars">
+            <h1 class="heading section-2-heading">Popular Cars</h1>
+            <div class="card-wrapper center">
+                <div class="card">
+                    <h2 class="card-heading">Car Name</h2>
+                    <img src="images/car-1.jpg" alt="card" class="card-image">
+                    <p class="card-price">$200,00</p>
+                    <button class="card-button">See More</button>
+                </div>
+                <div class="card">
+                    <h2 class="card-heading">Car Name</h2>
+                    <img src="images/car-2.jpg" alt="card" class="card-image">
+                    <p class="card-price">$200,00</p>
+                    <button class="card-button">See More</button>
+                </div>
+                <div class="card">
+                    <h2 class="card-heading">Car Name</h2>
+                    <img src="images/car-3.jpg" alt="card" class="card-image">
+                    <p class="card-price">$200,00</p>
+                    <button class="card-button">See More</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="wrapper">
+        <section class="section-3 center" id="video-gallery">
+            <h1 class="heading section-3-heading">Video Gallery</h1>
+            <div class="video-wrapper center">
+                <video src="images/car-video-1.mp4" muted loop class="video"></video>
+                <video src="images/car-video-2.mp4" muted loop class="video"></video>
+                <video src="images/car-video-3.mp4" muted loop class="video"></video>
+            </div>
+            <div class="video-wrapper center">
+                <video src="images/car-video-4.mp4" muted loop class="video"></video>
+                <video src="images/car-video-5.mp4" muted loop class="video"></video>
+                <video src="images/car-video-6.mp4" muted loop class="video"></video>
+            </div>
+        </section>
+    </div>
+
+    <div class="wrapper">
+        <section class="section-4 center">
+            <h1 class="heading section-4-heading">Image Gallery</h1>
+            <div class="gallery">
+                <div class="gallery-shelf"></div>
+                <img class="gallery-image img-1" src="images/gallery-car-1.jpg" alt="car image">
+                <img class="gallery-image img-2" src="images/gallery-car-2.jpg" alt="car image">
+                <img class="gallery-image img-3" src="images/gallery-car-3.jpg" alt="car image">
+            </div>
+            <div class="gallery">
+                <div class="gallery-shelf"></div>
+                <img class="gallery-image img-1" src="images/gallery-car-4.jpg" alt="car image">
+                <img class="gallery-image img-2" src="images/gallery-car-5.jpg" alt="car image">
+                <img class="gallery-image img-3" src="images/gallery-car-6.jpg" alt="car image">
+            </div>
+        </section>
+    </div>
+
+    <div class="wrapper">
+        <section class="section-5 center">
+            <h1 class="section-5-heading heading">Contact Us</h1>
+            <form class="contact-form">
+                <input type="Name" class="form-input" placeholder="Enter Your Name">
+                <input type="text" class="form-input" placeholder="Enter Your Email">
+                <textarea class="form-input" placeholder="Enter your Message"></textarea>
+                <input type="submit" class="input-submit" value="Submit">
+            </form>
+            <p class="copyrights">Copyright @ CodeAndCreate All Rights Reserverd</p>
+        </section>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
