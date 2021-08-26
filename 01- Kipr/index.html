@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@ Kipr Traveling</title>
+
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/bootstrap-grid.css">
+  <link rel="stylesheet" href="./styles/materialize.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="./Script/jquery.js"></script>
+
+</head>
+
+<body>
+
+  <header class="header" id="header">
+    <div class="container header-top flex_center">
+      <div class="header-burger" aria-label="Открыть меню">
+        <div class="header-burger__container">
+          <div class="header-burger__element header-burger__element_1"></div>
+          <div class="header-burger__element header-burger__element_2"></div>
+          <div class="header-burger__element header-burger__element_3"></div>
+        </div>
+      </div>
+      <div class="logo-wrapper">
+        <a href="#">
+          <img src="./img/Logo_2.png" alt="Logo" class="logo">
+        </a>
+      </div>
+      <div class="header__contacts-container flex_center">
+        <div class="header__contacts-box flex_center">
+          <div class="icon-wrapper icon-wrapper_time img-wrapper"></div>
+          <div class="contacts-wrapper">
+            <p class="light-text">График работы</p>
+            <p class="text">Пн-пт 9-21 &nbsp; Сб 11-17</p>
+          </div>
+        </div>
+        <div class="header__contacts-box flex_center">
+          <div class="icon-wrapper icon-wrapper_phone img-wrapper"></div>
+          <div class="contacts-wrapper">
+            <p class="bold-text"><a href="href=tel:80000000000">8 000 000-00-00</a></p>
+            <p class="light-text">Контактный телефон</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container flex_center">
+        <nav class="header-menu flex_center">
+          <li class="header-menu__list-item"> <a href="#" class="text">Главная</a> </li>
+          <li class="header-menu__list-item"> <a href="#" class="text">О компании</a></li>
+          <li class="header-menu__list-item"> <a href="#" class="text">Недвижимость</a></li>
+          <li class="header-menu__list-item"> <a href="#" class="text">Проекты</a></li>
+          <li class="header-menu__list-item"> <a href="#" class="text">Жизнь на Кипре</a> </li>
+          <li class="header-menu__list-item"> <a href="#" class="text">Новости</a></li>
+          <li class="header-menu__list-item"> <a href="#" class="text">Контакты</a></li>
+        </nav>
+        <div class="lang-select" aria-label="переключить язык">
+          <button>En</button>
+          <span>/</span>
+          <button>Ru</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="hero__title">Кипр</div>
+            <p class="hero__decr">это просто сказочная страна для отдыха и&nbsp;жизни.</p>
+          </div>
+        </div>
+        <span class="hero__span-block"><span>Кипр</span>&mdash;&nbsp;это небольшой остров с&nbsp;населением <br>
+          в&nbsp;800 тыс человек и&nbsp;столицей в&nbsp;Никосии.</span>
+      </div>
+    </div>
+
+    <div class="popular">
+      <div class="container">
+        <div class="popular__title section-title">Самые популярные города кипра</div>
+        <div class="row popular__row">
+          <article class="popular__cart col-lg-4">
+            <img src="./img/cart1.png" alt="Айя-Напа">
+            <div class="popular__cart-info">
+              <div class="popular__cart-title">Айя-Напа</div>
+              <p>Сюда приезжают основное число туристов, чтобы позагорать на&nbsp;пляжах с&nbsp;белым песком
+                и&nbsp;получить удовольствие от&nbsp;бурной ночной жизни</p>
+            </div>
+          </article>
+          <article class="popular__cart col-lg-4">
+            <img src="./img/cart2.png" alt="Айя-Напа">
+            <div class="popular__cart-info">
+              <div class="popular__cart-title">Пафос</div>
+              <p>Популярный курорт, особенно для любителей старины и&nbsp;археологических раскопок</p>
+            </div>
+          </article>
+          <article class="popular__cart col-lg-4">
+            <img src="./img/cart3.png" alt="Айя-Напа">
+            <div class="popular__cart-info">
+              <div class="popular__cart-title">Лимассол</div>
+              <p>Тут наши граждане предпочитают покупать недвижимость, оставаться жить, водить в&nbsp;школы детей</p>
+            </div>
+          </article>
+        </div>
+        <div class="pafos-container">
+          <div class="slider-container pafos_slider-container">
+            <div class="slides pafos_slides">
+              <input type="radio" name="r" id="r1" checked>
+              <input type="radio" name="r" id="r2">
+              <input type="radio" name="r" id="r3">
+              <input type="radio" name="r" id="r4">
+              <input type="radio" name="r" id="r5">
+              <div class="slide s1"><img src="./img/pic68.png" alt="Город Пафос"></div>
+              <div class="slide"><img src="./img/hero_bg.png" alt="Город Пафос"></div>
+              <div class="slide"><img src="./img/2.png" alt="Город Пафос"></div>
+              <div class="slide"><img src="./img/3.png" alt="Город Пафос"></div>
+              <div class="slide"><img src="./img/pic68.png" alt="Город Пафос"></div>
+            </div>
+          </div>
+          <div class="pafos__navigation navigation">
+            <div class="navigation-block flex_center">
+              <div class="pages">
+                <label for="r1" class="page-label page-number">01</label>
+                <label for="r2" class="page-label page-number">02</label>
+                <label for="r3" class="page-label page-number">03</label>
+                <label for="r4" class="page-label page-number">04</label>
+                <label for="r5" class="page-label page-number">05</label>
+              </div>
+              <div class="arrows flex_center">
+                <button class="prev" id="prev1">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16"
+                    height="10" viewBox="0 0 16 10" class="slider1__arrow_left">
+                    <image width="16" height="10"
+                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAAiUlEQVQokZ3QPQoCMQBE4W/FY4gHsFCx8Qf2EFZrIXgza+9hoZUoqJWl3kMCWZBgkeyrQsIbZlI1252EB+5o0od/9JK7K0Y45MiB/s/5ggmWOJcGHKM8wCdXbgNuGEdxj2GmW+GV/kExoUGoHiasMC+d0Dao45Q3Fl0CArMYcsK6S0Bgiic2WTa+g4sUKaAG93UAAAAASUVORK5CYII=" />
+                  </svg>
+                </button>
+                <button class="next" id="next1">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16"
+                    height="10" viewBox="0 0 16 10" class="slider1__arrow_right">
+                    <image data-name="Можно нажать" width="16" height="10"
+                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAAhklEQVQokZ3OsQqBYRyF8R+5C0YTikzU5w4sJgbl9pgs7oBiEosLkHIZ9K+XlOV7vzOeznl6avPlSsls0EP3d14v+8YaHVyqArYYo49zFUDkhFaC7KNoYIc2XiUhdzxR4Jpr8JcwmGZ+msnigEmuwQiPUI9zFDmAGY7pPPyUOYAFbhh8G7wBNwUUIRK59FAAAAAASUVORK5CYII=" />
+                  </svg></button>
+              </div>
+            </div>
+            <div class="pafos__navigation-info">
+              Около Пафоса находится по&nbsp;легенде место рождения богини Афродиты.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="larnaka">
+      <div class="container">
+        <div class="larnaka__top-section">
+          <div class="left-col">
+            <div class="slider-container larnaka_slider-container">
+              <div class="slides larnaka_slides">
+                <input type="radio" name="l" id="l1" checked>
+                <input type="radio" name="l" id="l2">
+                <input type="radio" name="l" id="l3">
+                <input type="radio" name="l" id="l4">
+                <input type="radio" name="l" id="l5">
+                <div class="slide f1"><img src="./img/larnaka.png" alt=""></div>
+                <div class="slide"><img src="./img/hero_bg.png" alt=""></div>
+                <div class="slide"><img src="./img/2.png" alt=""></div>
+                <div class="slide"><img src="./img/3.png" alt=""></div>
+                <div class="slide"><img src="./img/pic68.png" alt=""></div>
+              </div>
+            </div>
+            <div class="navigation larnaka__navigation">
+              <div class="navigation-block flex_center single-block">
+                <p class="text">Ларнака</p>
+                <div class="arrows flex_center">
+                  <button class="prev" id="prev2">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16"
+                      height="10" viewBox="0 0 16 10" class="slider2__arrow_left">
+                      <image width="16" height="10"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAAiUlEQVQokZ3QPQoCMQBE4W/FY4gHsFCx8Qf2EFZrIXgza+9hoZUoqJWl3kMCWZBgkeyrQsIbZlI1252EB+5o0od/9JK7K0Y45MiB/s/5ggmWOJcGHKM8wCdXbgNuGEdxj2GmW+GV/kExoUGoHiasMC+d0Dao45Q3Fl0CArMYcsK6S0Bgiic2WTa+g4sUKaAG93UAAAAASUVORK5CYII=" />
+                    </svg>
+                  </button>
+                  <button class="next" id="next2">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16"
+                      height="10" viewBox="0 0 16 10" class="slider2__arrow_right">
+                      <image data-name="Можно нажать" width="16" height="10"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAAhklEQVQokZ3OsQqBYRyF8R+5C0YTikzU5w4sJgbl9pgs7oBiEosLkHIZ9K+XlOV7vzOeznl6avPlSsls0EP3d14v+8YaHVyqArYYo49zFUDkhFaC7KNoYIc2XiUhdzxR4Jpr8JcwmGZ+msnigEmuwQiPUI9zFDmAGY7pPPyUOYAFbhh8G7wBNwUUIRK59FAAAAAASUVORK5CYII=" />
+                    </svg></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="larnaka__right-col">
+            <div class="section-title larnaka__title">Почему выбирают
+              ларнаку ?</div>
+            <p>Семейный город с&nbsp;отличными возможностями для обучения. Как третий по&nbsp;величине город
+              на&nbsp;острове Кипр, Ларнака предоставляет все услуги и&nbsp;удобства, необходимые для приятного
+              семейного образа жизни.</p>
+          </div>
+        </div>
+        <div class="row larnaka__center-section">
+          <div class="larnaka__center-section-title">Ларнака предлагает</div>
+          <p>Различные <b>образовательные
+              возможности</b> для ваших детей</p>
+          <div class="navigation larnaka__bottom__navigation flex_center col-lg-12">
+            <button class="nav-btn prev3 prev" id="prev3"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="10" viewBox="0 0 16 10"
+                class="slider3__arrow_left">
+                <image width="16" height="10"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAAiUlEQVQokZ3QPQoCMQBE4W/FY4gHsFCx8Qf2EFZrIXgza+9hoZUoqJWl3kMCWZBgkeyrQsIbZlI1252EB+5o0od/9JK7K0Y45MiB/s/5ggmWOJcGHKM8wCdXbgNuGEdxj2GmW+GV/kExoUGoHiasMC+d0Dao45Q3Fl0CArMYcsK6S0Bgiic2WTa+g4sUKaAG93UAAAAASUVORK5CYII=" />
+              </svg>Назад</button>
+            <div class="pages">
+              <label for="k1" class="page-label indicator-item">01</label>
+              <label for="k2" class="page-label">02</label>
+              <label for="k3" class="page-label">03</label>
+              <label for="k4" class="page-label">04</label>
+              <label for="k5" class="page-label">05</label>
+            </div>
+            <button class="nav-btn next3 next" id="next3">Вперед<svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="10" viewBox="0 0 16 10"
+                class="slider3__arrow_right">
+                <image data-name="Можно нажать" width="16" height="10"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAAhklEQVQokZ3OsQqBYRyF8R+5C0YTikzU5w4sJgbl9pgs7oBiEosLkHIZ9K+XlOV7vzOeznl6avPlSsls0EP3d14v+8YaHVyqArYYo49zFUDkhFaC7KNoYIc2XiUhdzxR4Jpr8JcwmGZ+msnigEmuwQiPUI9zFDmAGY7pPPyUOYAFbhh8G7wBNwUUIRK59FAAAAAASUVORK5CYII=" />
+              </svg></button>
+          </div>
+          <div class="carousel">
+            <a href="" class="carousel-item"><img src="./img/1.png" alt="" class="responsive-img"></a>
+            <a href="" class="carousel-item"> <img src="./img/2.png" alt="" class="responsive-img"> </a>
+            <a href="" class="carousel-item"><img src="./img/3.png" alt="" class="responsive-img"> </a>
+          </div>
+        </div>
+      </div>
+      <div class="larnaka__bottom-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <p class="laranka__buttom_text">
+                Несколько частных школ, говорящих по-английски, с&nbsp;высокими стандартами и&nbsp;замечательными
+                достижениями, которые тщательно готовят студентов к&nbsp;поступлению в&nbsp;международные колледжи
+                и&nbsp;университеты по&nbsp;всему миру.
+              </p>
+              <div class="larnaka__bold-title">В&nbsp;дополнение к&nbsp;своим культурным и&nbsp;историческим чудесам,
+                Ларнака обладает множеством природных красот.</div>
+            </div>
+          </div>
+          <div class="wrapper larnaka-wrapper">
+            <div class="larnaka__buttom-cart">
+              <div class="img-container">
+                <img src="./img/larnaka_pic.png" alt="Larnaka">
+              </div>
+              <div class="text-container">
+                <p>
+                  Жители Ларнаки имеют возможность посетить и&nbsp;насладиться многими достопримечательностями
+                  и&nbsp;памятниками как внутри, так и&nbsp;за&nbsp;пределами города: византийская церковь Святого
+                  Лазаря,
+                  датируемая 890 годом н.э.; Монастырь Ставровуни, построенный святой Еленой, матерью Константина
+                  Великого, в&nbsp;330 году н.э.&nbsp;и&nbsp;в&nbsp;котором размещен фрагмент Святого Креста Иисуса,
+                  который был заложен там самой Святой Еленой. Хала-султан Текке, или мечеть Умм-Харам, одна
+                  из&nbsp;самых
+                  священных мусульманских святынь; и&nbsp;набережная пальмы вдоль главной набережной Ларнаки.</p>
+              </div>
+            </div>
+            <div class="larnaka__buttom-cart larnaka__buttom-cart_second">
+              <div class="text-container">
+                <p>
+                  Четыре из&nbsp;пляжей города получили награду международного синего флага за&nbsp;качество
+                  их&nbsp;вод
+                  и&nbsp;услуг.
+                  <br>
+                  <br>
+                  Немного дальше в&nbsp;глубь страны, Соленое озеро Ларнаки (Алики) предоставляет дом для розовых
+                  фламинго, которые каждую зиму посещают Кипр.
+                  <br>
+                  <br>
+                  В&nbsp;нескольких минутах езды от&nbsp;города вы&nbsp;можете найти множество живописных деревень,
+                  которые по-прежнему сохраняют более старый образ жизни и&nbsp;предлагают тихое отступление
+                  от&nbsp;города.
+                </p>
+              </div>
+              <div class="img-container">
+                <img src="./img/larnaka_pic2.png" alt="Larnaka">
+              </div>
+            </div>
+          </div>
+          <div class="row larnaka__bottom-text-container">
+            <p class="larnaka__bottom-text">Ларнака - город теплых и приветливых людей, солнечная погода и множество
+              исторических и культурных достопримечательностей и памятников.</p>
+            <p class="larnaka__buttom-text2">
+              Ларнака также входит в число самых высоких городов мира для обеспечения безопасности, что делает его
+              идеальным местом для жизни, создания семьи или проведения отпуска. В Средиземноморском климате или сухом
+              летнем субтропике Кипр каждый день получает 326 солнечных дней и занимает самое солнечное место в Европе.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="wrapper">
+          <div class="footer-top__left-side">
+            <div class="logo-wrapper">
+              <img src="./img/Logo_2.png" alt="Logo">
+            </div>
+            <div class="footer__contacts">
+
+
+              <div class="footer__phone-container">
+                <p class="footer-top__light-text">Телефоны:</p>
+                <p class="bold-text"><a href="href=tel:80000000000">8 000 000-00-00</a></p>
+                <p class="bold-text"><a href="href=tel:80000000000">8 000 000-00-00</a></p>
+
+              </div>
+              <div>
+
+                <p class="footer-top__light-text">Адрес:</p>
+                <p class="footer-top__text">Уличная улица 3, Ланарка, Кипр</p>
+                <p class="footer-top__light-text">Email:</p>
+                <p class="footer-top__text"><a href="mailto:info@patsiasdevelopers.com">info@patsiasdevelopers.com</a></p>
+
+              </div>
+            </div>
+          </div>
+          <div class="footer-top__right-side">
+            <div id="map" style="width:100%;height:410px;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="wrapper">
+          <nav class="header-menu flex_center footer-menu">
+            <li class="header-menu__list-item"> <a href="#" class="text">Главная</a> </li>
+            <li class="header-menu__list-item"> <a href="#" class="text">О компании</a></li>
+            <li class="header-menu__list-item"> <a href="#" class="text">Недвижимость</a></li>
+            <li class="header-menu__list-item"> <a href="#" class="text">Проекты</a></li>
+            <li class="header-menu__list-item"> <a href="#" class="text">Жизнь на Кипре</a> </li>
+            <li class="header-menu__list-item"> <a href="#" class="text">Новости</a></li>
+            <li class="header-menu__list-item"> <a href="#" class="text">Контакты</a></li>
+          </nav>
+          <div class="copyrights">
+            <p>Patsias 2017&copy;</p>
+            <a href="#header">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="23"
+                viewBox="0 0 14 23">
+                <image id="Иконка_Вверх" data-name="Иконка Вверх" width="14" height="23"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAXCAYAAAA7kX6CAAAA6klEQVQ4je2Uu0pDQRRFV3whWiSFhSgWFn6A/rJdsEwK0TQ2ouIH2Nr4QMX4SFSEJScc9Zp7LyJYZsPAzD57wTBzZhoqNToEFoEt4L0UCbBi7PutI3VuPFMF7VrWyW9gJ5E79VK9V2/TO6gD2xk4V9fUM7WvrqqnWeuNgztZeFSX03tLL+bz6kWu9z7B7TRe1I0MxmkP0m+lt6Jep9clF0N1s7DtAJ8z1Cz46+qD+hqBJWAauCrcUgN4AhaAFtAv1CI/OwPc1HVAjUb5qT9CX5qAE/D/wWjwUDR8SdHkVYqv7zhfRrySnwI+ANTXYQwV8Cp0AAAAAElFTkSuQmCC" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCobfkBwdO2cvyhXm8mgxcp6jAJd089OOY&callback=myMap"
+  async defer></script>
+  <script src="./Script/materialize.js"></script>
+  <script src="./Script/mian.js"></script>
+</body>
+
+</html>
