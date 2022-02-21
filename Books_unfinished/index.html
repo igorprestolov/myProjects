@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books</title>
+
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-5.0.0-beta2-dist/css/bootstrap-grid.min.css">
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="header-top flex_center">
+        <div class="header__calls">
+          <span>Calls are free of charge</span>
+          <span> <a href="tel:0-800-600-50">0-800-600-505</a></span>
+        </div>
+        <nav class="nav-menu">
+          <li class="nav-menu__item"><a href="#">Book Listing</a></li>
+          <li class="nav-menu__item"><a href="#">Single Book</a></li>
+          <li class="nav-menu__item"><a href="#">Blog</a></li>
+          <li class="nav-menu__item"><a href="#">Login</a></li>
+        </nav>
+      </div>
+      <div class="header-bottom flex_center">
+        <div class="logo">
+          <a href="#"><img src="img/logo.png" alt="Logo"></a>
+        </div>
+        <div class="header-bottom__center flex_center">
+          <div class="all-books flex_center">
+            <div class="all-books__elements-wrapper">
+              <div class="all-books__element"></div>
+              <div class="all-books__element"></div>
+              <div class="all-books__element"></div>
+              <div class="all-books__element"></div>
+            </div>
+            <button>All books</button>
+          </div>
+          <div class="search-box flex_center">
+            <div class="search-icon"></div>
+            <input type="text" class="search-input" placeholder="I'm looking for...">
+            <button class="search-btn" type="submit">Search</button>
+          </div>
+        </div>
+        <div class="user-cart flex_center">
+          <a href="" class="user-cart-icon user-cart__saved"><img src="img/bookmark.png" alt="saved"></a>
+          <a href="" class="user-cart-icon user-cart__bucket"><img src="img/shopping cart.png" alt="shopping cart"></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container flex_center">
+        <ul class="hero__list list">
+          <li class="hero__list-item list-item"><button>Books</button></li>
+          <li class="hero__list-item list-item"><button>Pupular</button></li>
+          <li class="hero__list-item list-item"><button>Sale</button></li>
+          <li class="hero__list-item list-item"><button>New</button></li>
+        </ul>
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper hero-swiper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/Banner 01.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/Banner 01.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/Banner 01.png" alt=""></div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="books-list">
+      <div class="container bl-container">
+        <h2 class="books-list__title title">Best Sellers</h2>
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide bl-swiper">
+              <div class="row row-cols-5 bl-row">
+                <article class="col bl-wrapper">
+                  <div class="bl__img-wrapper flex_center">
+                    <img src="img/bs1.png" alt="Bse">
+                    <span class="bl__tooltip"></span>
+                  </div>
+                  <div class="bl__info-wrapper">
+                    <h3 class="bl__book-title book-title">One Vote Away</h3>
+                    <h3 class="bl__author-name author-name">Ted Cruz</h3>
+                    <div class="bl__rating flex_center">
+                      <div class="bl__price price">$17.39</div>
+                      <div class="bl__rating-stars flex_center">
+                        <img src="img/Star black.png" alt="Рейтинг 4 из 5">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star white.png" alt="">
+                      </div>
+                    </div>
+                    <div class="bl__user-action flex_center">
+                      <button class="bl__add-btn btn">Add to cart</button>
+                      <button aria-role="buttin" class="bl__bookmark-btn flex_center">
+                        <img src="img/bl_bookmark.png" alt="add to bookmarks">
+                      </button>
+                    </div>
+                  </div>
+
+                </article>
+                <article class="col bl-wrapper">
+                  <div class="bl__img-wrapper">
+                    <img src="img/bs2.png" alt="Bse">
+                    <span class="bl__tooltip"></span>
+                  </div>
+                  <div class="bl__info-wrapper">
+                    <h3 class="bl__book-title book-title">7 Secrets of Persuasion </h3>
+                    <h3 class="bl__author-name author-name">Ina Garten</h3>
+                    <div class="bl__rating flex_center">
+                      <div class="bl__price price">$12.00</div>
+                      <div class="bl__rating-stars flex_center">
+                        <img src="img/Star black.png" alt="Рейтинг 4 из 5">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star white.png" alt="">
+                      </div>
+                    </div>
+                    <div class="bl__user-action flex_center">
+                      <button class="bl__add-btn btn">Add to cart</button>
+                      <button aria-role="buttin" class="bl__bookmark-btn flex_center">
+                        <img src="img/bl_bookmark.png" alt="add to bookmarks">
+                      </button>
+                    </div>
+                  </div>
+
+                </article>
+                <article class="col bl-wrapper">
+                  <div class="bl__img-wrapper">
+                    <img src="img/bs3.png" alt="Bse">
+                    <span class="bl__tooltip"></span>
+                  </div>
+                  <div class="bl__info-wrapper">
+                    <h3 class="bl__book-title book-title">American Dirt</h3>
+                    <h3 class="bl__author-name author-name">Jeanine Cummins</h3>
+                    <div class="bl__rating flex_center">
+                      <div class="bl__price price">$16.00</div>
+                      <div class="bl__rating-stars flex_center">
+                        <img src="img/Star black.png" alt="Рейтинг 4 из 5">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star white.png" alt="">
+                      </div>
+                    </div>
+                    <div class="bl__user-action flex_center">
+                      <button class="bl__add-btn btn">Add to cart</button>
+                      <button aria-role="buttin" class="bl__bookmark-btn flex_center">
+                        <img src="img/bl_bookmark.png" alt="add to bookmarks">
+                      </button>
+                    </div>
+                  </div>
+
+                </article>
+                <article class="col bl-wrapper">
+                  <div class="bl__img-wrapper">
+                    <img src="img/bs4.png" alt="Bse">
+                    <span class="bl__tooltip"></span>
+                  </div>
+                  <div class="bl__info-wrapper">
+                    <h3 class="bl__book-title book-title">Surviving The Forest</h3>
+                    <h3 class="bl__author-name author-name">Adiva Geffen</h3>
+                    <div class="bl__rating flex_center">
+                      <div class="bl__price price">$22.99</div>
+                      <div class="bl__rating-stars flex_center">
+                        <img src="img/Star black.png" alt="Рейтинг 4 из 5">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star white.png" alt="">
+                      </div>
+                    </div>
+                    <div class="bl__user-action flex_center">
+                      <button class="bl__add-btn btn">Add to cart</button>
+                      <button aria-role="buttin" class="bl__bookmark-btn flex_center">
+                        <img src="img/bl_bookmark.png" alt="add to bookmarks">
+                      </button>
+                    </div>
+                  </div>
+
+                </article>
+                <article class="col bl-wrapper">
+                  <div class="bl__img-wrapper">
+                    <img src="img/bs5.png" alt="Bse">
+                    <span class="bl__tooltip"></span>
+                  </div>
+                  <div class="bl__info-wrapper">
+                    <h3 class="bl__book-title book-title">The Secrets We Keep</h3>
+                    <h3 class="bl__author-name author-name">Kate Hewitt</h3>
+                    <div class="bl__rating flex_center">
+                      <div class="bl__price price">$10.50</div>
+                      <div class="bl__rating-stars flex_center">
+                        <img src="img/Star black.png" alt="Рейтинг 4 из 5">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star white.png" alt="">
+                      </div>
+                    </div>
+                    <div class="bl__user-action flex_center">
+                      <button class="bl__add-btn btn">Add to cart</button>
+                      <button aria-role="buttin" class="bl__bookmark-btn flex_center">
+                        <img src="img/bl_bookmark.png" alt="add to bookmarks">
+                      </button>
+                    </div>
+                  </div>
+
+                </article>
+              </div>
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+        </div>
+
+      </div>
+    </section>
+    <section class="books-list">
+      <div class="container bl-container">
+        <h2 class="books-list__title title">Hot New Releases</h2>
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide bl-swiper">
+              <div class="row row-cols-5 bl-row">
+                <article class="col bl-wrapper">
+                  <div class="bl__img-wrapper">
+                    <img src="img/bs6.png" alt="The Dip by Seth Godin">
+                    <span class="bl__tooltip bl__tooltip_popular"></span>
+                  </div>
+                  <div class="bl__info-wrapper">
+                    <h3 class="bl__book-title book-title">The Dip</h3>
+                    <h3 class="bl__author-name author-name">Seth Godin</h3>
+                    <div class="bl__rating flex_center">
+                      <div class="bl__price price">$17.39</div>
+                      <div class="bl__rating-stars flex_center">
+                        <img src="img/Star black.png" alt="Рейтинг 4 из 5">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star white.png" alt="">
+                      </div>
+                    </div>
+                    <div class="bl__user-action flex_center">
+                      <button class="bl__add-btn btn">Add to cart</button>
+                      <button aria-role="buttin" class="bl__bookmark-btn flex_center">
+                        <img src="img/bl_bookmark.png" alt="add to bookmarks">
+                      </button>
+                    </div>
+                  </div>
+
+                </article>
+                <article class="col bl-wrapper">
+                  <div class="bl__img-wrapper">
+                    <img src="img/bs7.png" alt="A Promised Land by Barack Obama">
+                    <span class="bl__tooltip bl__tooltip_popular"></span>
+                  </div>
+                  <div class="bl__info-wrapper">
+                    <h3 class="bl__book-title book-title">A Promised Land</h3>
+                    <h3 class="bl__author-name author-name">Barack Obama</h3>
+                    <div class="bl__rating flex_center">
+                      <div class="bl__price price">$12.00</div>
+                      <div class="bl__rating-stars flex_center">
+                        <img src="img/Star black.png" alt="Рейтинг 4 из 5">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star white.png" alt="">
+                      </div>
+                    </div>
+                    <div class="bl__user-action flex_center">
+                      <button class="bl__add-btn btn">Add to cart</button>
+                      <button aria-role="buttin" class="bl__bookmark-btn flex_center">
+                        <img src="img/bl_bookmark.png" alt="add to bookmarks">
+                      </button>
+                    </div>
+                  </div>
+
+                </article>
+                <article class="col bl-wrapper">
+                  <div class="bl__img-wrapper">
+                    <img src="img/bs8.png" alt="The Office by Robb Pearlman">
+                    <span class="bl__tooltip bl__tooltip_popular"></span>
+                  </div>
+                  <div class="bl__info-wrapper">
+                    <h3 class="bl__book-title book-title">The Office</h3>
+                    <h3 class="bl__author-name author-name">JRobb Pearlman</h3>
+                    <div class="bl__rating flex_center">
+                      <div class="bl__price price">$16.00</div>
+                      <div class="bl__rating-stars flex_center">
+                        <img src="img/Star black.png" alt="Рейтинг 4 из 5">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star white.png" alt="">
+                      </div>
+                    </div>
+                    <div class="bl__user-action flex_center">
+                      <button class="bl__add-btn btn">Add to cart</button>
+                      <button aria-role="buttin" class="bl__bookmark-btn flex_center">
+                        <img src="img/bl_bookmark.png" alt="add to bookmarks">
+                      </button>
+                    </div>
+                  </div>
+
+                </article>
+                <article class="col bl-wrapper">
+                  <div class="bl__img-wrapper">
+                    <img src="img/bs9.png" alt="The Return by Nicholas Sparks">
+                    <span class="bl__tooltip bl__tooltip_popular"></span>
+                  </div>
+                  <div class="bl__info-wrapper">
+                    <h3 class="bl__book-title book-title">The Return</h3>
+                    <h3 class="bl__author-name author-name">Nicholas Sparks</h3>
+                    <div class="bl__rating flex_center">
+                      <div class="bl__price price">$22.99</div>
+                      <div class="bl__rating-stars flex_center">
+                        <img src="img/Star black.png" alt="Рейтинг 4 из 5">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star white.png" alt="">
+                      </div>
+                    </div>
+                    <div class="bl__user-action flex_center">
+                      <button class="bl__add-btn btn">Add to cart</button>
+                      <button aria-role="buttin" class="bl__bookmark-btn flex_center">
+                        <img src="img/bl_bookmark.png" alt="add to bookmarks">
+                      </button>
+                    </div>
+                  </div>
+
+                </article>
+                <article class="col bl-wrapper">
+                  <div class="bl__img-wrapper">
+                    <img src="img/bs10.png" alt="7 Secrets of Persuasion by Kristin Cavallari ">
+                    <span class="bl__tooltip bl__tooltip_popular"></span>
+                  </div>
+                  <div class="bl__info-wrapper">
+                    <h3 class="bl__book-title book-title">7 Secrets of Persuasion</h3>
+                    <h3 class="bl__author-name author-name">Kristin Cavallari</h3>
+                    <div class="bl__rating flex_center">
+                      <div class="bl__price price">$10.50</div>
+                      <div class="bl__rating-stars flex_center">
+                        <img src="img/Star black.png" alt="Рейтинг 4 из 5">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star white.png" alt="">
+                      </div>
+                    </div>
+                    <div class="bl__user-action flex_center">
+                      <button class="bl__add-btn btn">Add to cart</button>
+                      <button aria-role="buttin" class="bl__bookmark-btn flex_center">
+                        <img src="img/bl_bookmark.png" alt="add to bookmarks">
+                      </button>
+                    </div>
+                  </div>
+
+                </article>
+              </div>
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="book-article">
+      <div class="container book-article__container">
+        <div class="book-article__left">
+          <span class="book-article__span">
+            <div>Book of the Week</div>
+          </span>
+          <h3 class="book-article__title">Elsewhere</h3>
+          <p class="book-article__author">by Dean Koontz</p>
+          <div class="book-article__price price">$18.99</div>
+          <div class="book-article__description">The fate of the world is in the hands of a father and
+            daughter in an epic novel of wonder and terror by Dean Koontz, the #1 New York Times bestselling
+            master of suspense.
+          </div>
+          <button class="book-article__button btn">View Details</button>
+        </div>
+        <div class="book-article__right">
+          <img src="/img/book-article book.png" alt="Elsewhere by Dean Koontz">
+        </div>
+
+      </div>
+    </section>
+
+    <section id="bestbooks">
+      <div class="container bestbooks-container">
+        <h3 class="bestbooks__title title">The Best Books of 2020</h3>
+        <div class="bestbooks__wrapper">
+          <ul class="bestbooks__list list">
+            <li class="bestbooks__list-item list-item"><button>Paper Books</button></li>
+            <li class="bestbooks__list-item list-item"><button>E-Books</button></li>
+            <li class="bestbooks__list-item list-item"><button>Audio Books</button></li>
+          </ul>
+          <div class="bestbooks__books-grid">
+            <div class="row row-cols-5 bestbook__row">
+              <article class="col bestbooks__article">
+                <div class="bestbooks__img-wrapper img-wrapper">
+                  <img src="/img/Booksgrid/Book1.png" alt="The Dancing Girls by M.M. Chouinard">
+                </div>
+                <div class="bestbooks__info-wrapper">
+                  <h4 class="bestbooks__book-title book-title">The Dancing Girls</h4>
+                  <p class="bestbooks__author author-name">M.M. Chouinard</p>
+                  <div class="price bestbooks__price">$13.00</div>
+                </div>
+              </article>
+              <article class="col bestbooks__article">
+                <div class="bestbooks__img-wrapper img-wrapper">
+                  <img src="/img/Booksgrid/Book2.png" alt="Zombies’ Day by PopularMMOs">
+                </div>
+                <div class="bestbooks__info-wrapper">
+                  <h4 class="bestbooks__book-title book-title">Zombies’ Day</h4>
+                  <p class="bestbooks__author author-name">PopularMMOs</p>
+                  <div class="price bestbooks__price">$13.00</div>
+                </div>
+              </article>
+              <article class="col bestbooks__article">
+                <div class="bestbooks__img-wrapper img-wrapper">
+                  <img src="/img/Booksgrid/Book3.png" alt="The Calculating Stars by Mary Robinette Kowal">
+                </div>
+                <div class="bestbooks__info-wrapper">
+                  <h4 class="bestbooks__book-title book-title">The Calculating Stars</h4>
+                  <p class="bestbooks__author author-name">Mary Robinette Kowal</p>
+                  <div class="price bestbooks__price">$12.79</div>
+                </div>
+              </article>
+              <article class="col bestbooks__article">
+                <div class="bestbooks__img-wrapper img-wrapper">
+                  <img src="/img/Booksgrid/Book4.png" alt="The Obelisk Gate by N. K. Jemisin">
+                </div>
+                <div class="bestbooks__info-wrapper">
+                  <h4 class="bestbooks__book-title book-title">The Obelisk Gate</h4>
+                  <p class="bestbooks__author author-name">N. K. Jemisin</p>
+                  <div class="price bestbooks__price">$13.00</div>
+                </div>
+              </article>
+              <article class="col bestbooks__article">
+                <div class="bestbooks__img-wrapper img-wrapper">
+                  <img src="/img/Booksgrid/Book5.png" alt="Where the Forest Meets... by Glendy Vanderah">
+                </div>
+                <div class="bestbooks__info-wrapper">
+                  <h4 class="bestbooks__book-title book-title">Where the Forest Meets...</h4>
+                  <p class="bestbooks__author author-name">Glendy Vanderah</p>
+                  <div class="price bestbooks__price">$15.99</div>
+                </div>
+              </article>
+            </div>
+            <div class="row row-cols-5 bestbook__row">
+              <article class="col bestbooks__article">
+                <div class="bestbooks__img-wrapper img-wrapper">
+                  <img src="/img/Booksgrid/Book6.png" alt="Without a Summer by Mary Robinette Kowal">
+                </div>
+                <div class="bestbooks__info-wrapper">
+                  <h4 class="bestbooks__book-title book-title">Without a Summer </h4>
+                  <p class="bestbooks__author author-name">Mary Robinette Kowal</p>
+                  <div class="price bestbooks__price">$13.00</div>
+                </div>
+              </article>
+              <article class="col bestbooks__article">
+                <div class="bestbooks__img-wrapper img-wrapper">
+                  <img src="/img/Booksgrid/Book7.png" alt="It All Comes Back to You by Beth Duke">
+                </div>
+                <div class="bestbooks__info-wrapper">
+                  <h4 class="bestbooks__book-title book-title">It All Comes Back to You</h4>
+                  <p class="bestbooks__author author-name">Beth Duke</p>
+                  <div class="price bestbooks__price">$13.32</div>
+                </div>
+              </article>
+              <article class="col bestbooks__article">
+                <div class="bestbooks__img-wrapper img-wrapper">
+                  <img src="/img/Booksgrid/Book8.png" alt="The Calculating Stars by Georgia Hunter">
+                </div>
+                <div class="bestbooks__info-wrapper">
+                  <h4 class="bestbooks__book-title book-title">We Were the Lucky Ones</h4>
+                  <p class="bestbooks__author author-name">Georgia Hunter</p>
+                  <div class="price bestbooks__price">$9.60</div>
+                </div>
+              </article>
+              <article class="col bestbooks__article">
+                <div class="bestbooks__img-wrapper img-wrapper">
+                  <img src="/img/Booksgrid/Book9.png" alt="The Obelisk Gate by Lysa TerKeurst">
+                </div>
+                <div class="bestbooks__info-wrapper">
+                  <h4 class="bestbooks__book-title book-title">It's Not Supposed to...</h4>
+                  <p class="bestbooks__author author-name">Lysa TerKeurst</p>
+                  <div class="price bestbooks__price">$12.50</div>
+                </div>
+              </article>
+              <article class="col bestbooks__article">
+                <div class="bestbooks__img-wrapper img-wrapper">
+                  <img src="/img/Booksgrid/Book10.png" alt="Everything Is F*cked by Mark Manson">
+                </div>
+                <div class="bestbooks__info-wrapper">
+                  <h4 class="bestbooks__book-title book-title">Everything Is F*cked</h4>
+                  <p class="bestbooks__author author-name">Mark Manson</p>
+                  <div class="price bestbooks__price">$13.00</div>
+                </div>
+              </article>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news-section" id="news-section">
+      <div class="container news-container">
+        <h3 class="title news__title">News and Articles</h3>
+        <span class="news__see_all"><button>See All</button></span>
+        <div class="news-wrapper row">
+          <div class="col-3 news__cart news__cart_1">
+            <img src="/img/news1.png" alt="News and Article" class="news__cart__img">
+            <span class="news__tooltip">Awards</span>
+            <h4 class="news__cart__title book-title">The National Book Award longlists</h4>
+            <p class="news__date author-name">| September 21, 2020</p>
+          </div>
+          <div class="col-3 news__cart news__cart_2">
+            <img src="/img/news2.png" alt="News and Article" class="news__cart__img">
+            <span class="news__tooltip">Editors` Picks</span>
+            <h4 class="news__cart__title book-title">Weekend reading</h4>
+            <p class="news__date author-name">| September 21, 2020</p>
+          </div>
+          <div class="col-3 news__cart news__cart_3">
+            <img src="/img/news3.png" alt="News and Article" class="news__cart__img">
+            <span class="news__tooltip">Interview</span>
+            <h4 class="news__cart__title book-title">The National Book Award longlists</h4>
+            <p class="news__date author-name">| September 21, 2020</p>
+          </div>
+          <div class="col-3 news__cart news__cart_4">
+            <img src="/img/news4.png" alt="News and Article" class="news__cart__img">
+            <span class="news__tooltip">Awards</span>
+            <h4 class="news__cart__title book-title">The best history books of September</h4>
+            <p class="news__date author-name">| September 21, 2020</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="related-books">
+      <div class="container bl-container">
+        <h2 class="books-list__title title">Related Books</h2>
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide bl-swiper">
+              <div class="row row-cols-5 bl-row">
+                <article class="col bl-wrapper">
+                  <div class="bl__img-wrapper">
+                    <img src="img/rb1.png" alt="Bse">
+                    <span class="bl__tooltip"></span>
+                  </div>
+                  <div class="bl__info-wrapper">
+                    <h3 class="bl__book-title book-title">The Fated Sky: A Lady Astronaut Novel</h3>
+                    <h3 class="bl__author-name author-name">Mary Robinette Kowal</h3>
+                    <div class="bl__rating flex_center">
+                      <div class="bl__price price">$3.00</div>
+                      <div class="bl__rating-stars flex_center">
+                        <img src="img/Star black.png" alt="Рейтинг 4 из 5">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star white.png" alt="">
+                      </div>
+                    </div>
+                    <div class="bl__user-action flex_center">
+                      <button class="bl__add-btn btn">Add to cart</button>
+                      <button aria-role="buttin" class="bl__bookmark-btn flex_center">
+                        <img src="img/bl_bookmark.png" alt="add to bookmarks">
+                      </button>
+                    </div>
+                  </div>
+
+                </article>
+                <article class="col bl-wrapper">
+                  <div class="bl__img-wrapper">
+                    <img src="img/rb2.png" alt="Bse">
+                    <span class="bl__tooltip"></span>
+                  </div>
+                  <div class="bl__info-wrapper">
+                    <h3 class="bl__book-title book-title">Glamour in Glass (Glamourist Histories...</h3>
+                    <h3 class="bl__author-name author-name">Mary Robinette Kowal</h3>
+                    <div class="bl__rating flex_center">
+                      <div class="bl__price price">$20.00</div>
+                      <div class="bl__rating-stars flex_center">
+                        <img src="img/Star black.png" alt="Рейтинг 4 из 5">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star white.png" alt="">
+                      </div>
+                    </div>
+                    <div class="bl__user-action flex_center">
+                      <button class="bl__add-btn btn">Add to cart</button>
+                      <button aria-role="buttin" class="bl__bookmark-btn flex_center">
+                        <img src="img/bl_bookmark.png" alt="add to bookmarks">
+                      </button>
+                    </div>
+                  </div>
+
+                </article>
+                <article class="col bl-wrapper">
+                  <div class="bl__img-wrapper">
+                    <img src="img/rb3.png" alt="Bse">
+                    <span class="bl__tooltip"></span>
+                  </div>
+                  <div class="bl__info-wrapper">
+                    <h3 class="bl__book-title book-title">In an Absent Dream (Wayward Children...</h3>
+                    <h3 class="bl__author-name author-name">Seanan McGuire</h3>
+                    <div class="bl__rating flex_center">
+                      <div class="bl__price price">$14.00</div>
+                      <div class="bl__rating-stars flex_center">
+                        <img src="img/Star black.png" alt="Рейтинг 4 из 5">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star white.png" alt="">
+                      </div>
+                    </div>
+                    <div class="bl__user-action flex_center">
+                      <button class="bl__add-btn btn">Add to cart</button>
+                      <button aria-role="buttin" class="bl__bookmark-btn flex_center">
+                        <img src="img/bl_bookmark.png" alt="add to bookmarks">
+                      </button>
+                    </div>
+                  </div>
+
+                </article>
+                <article class="col bl-wrapper">
+                  <div class="bl__img-wrapper">
+                    <img src="img/rb4.png" alt="Bse">
+                    <span class="bl__tooltip"></span>
+                  </div>
+                  <div class="bl__info-wrapper">
+                    <h3 class="bl__book-title book-title">Good Vibes, Good Life: How Self-Love Is the...</h3>
+                    <h3 class="bl__author-name author-name">Vex King</h3>
+                    <div class="bl__rating flex_center">
+                      <div class="bl__price price">$31.00</div>
+                      <div class="bl__rating-stars flex_center">
+                        <img src="img/Star black.png" alt="Рейтинг 4 из 5">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star white.png" alt="">
+                      </div>
+                    </div>
+                    <div class="bl__user-action flex_center">
+                      <button class="bl__add-btn btn">Add to cart</button>
+                      <button aria-role="buttin" class="bl__bookmark-btn flex_center">
+                        <img src="img/bl_bookmark.png" alt="add to bookmarks">
+                      </button>
+                    </div>
+                  </div>
+
+                </article>
+                <article class="col bl-wrapper">
+                  <div class="bl__img-wrapper">
+                    <img src="img/rb5.png" alt="Bse">
+                    <span class="bl__tooltip"></span>
+                  </div>
+                  <div class="bl__info-wrapper">
+                    <h3 class="bl__book-title book-title">Get Out of Your Own Way: Overcoming... </h3>
+                    <h3 class="bl__author-name author-name">Mark Goulston</h3>
+                    <div class="bl__rating flex_center">
+                      <div class="bl__price price">$12.40</div>
+                      <div class="bl__rating-stars flex_center">
+                        <img src="img/Star black.png" alt="Рейтинг 4 из 5">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star black.png" alt="">
+                        <img src="img/Star white.png" alt="">
+                      </div>
+                    </div>
+                    <div class="bl__user-action flex_center">
+                      <button class="bl__add-btn btn">Add to cart</button>
+                      <button aria-role="buttin" class="bl__bookmark-btn flex_center">
+                        <img src="img/bl_bookmark.png" alt="add to bookmarks">
+                      </button>
+                    </div>
+                  </div>
+
+                </article>
+              </div>
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container footer__container">
+      <div class="footer__top">
+        <div class="row">
+          <div class="col-md-6 row">
+            <div class="col-md-6">
+              <h4 class="footer__title">Popular Categories</h4>
+              <ul class="footer__list">
+                <li class="footer__list-item"><a href="#" class="footer__text">Business & Money</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__text">Children's Books</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__text">Computers & Technology</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__text">Cookbooks, Food & Wine</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__text">Crafts, Hobbies & Home</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__text">Education & Teaching</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h4 class="footer__title">Customer Service</h4>
+              <ul class="footer__list">
+                <li class="footer__list-item"><a href="#" class="footer__text">Help</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__text">FAQ</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__text">Secure Payment</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__text">Delivery</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__text">Returns & refunds</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__text">Contact us</a></li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="col-md-6 row subscribe-row">
+            <div class="col-md-3">
+              <h4 class="footer__title">Follow Us</h4>
+              <ul class="footer__list">
+                <li class="footer__list-item"><a href="#" class="footer__text">Instagram</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__text">Facebook</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__text">Twitter</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__text">Pinterest</a></li>
+              </ul>
+            </div>
+            <div class="col-md-9 subscribe-col">
+              <h4 class="footer__title footer__title_subscribe">Subscribe to our Newsletter</h4>
+              <p class="footer__text footer__text_subscribe">No spam, we promise</p>
+              <div class="subscribe-block">
+                <input type="text" class="subscribe__input" placeholder="example@mail.com">
+                <button class="subscribe-btn btn">Subscribe</button>
+              </div>
+              <div class="header__calls">
+                <span>Calls are free of charge</span>
+                <span> <a href="tel:0-800-600-50">0-800-600-505</a></span>
+              </div>
+              <p class="footer__text footer__text_subscribe">Working hours from 09:00 to 18:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container flex_center">
+        <div class="footer__bootom_left">
+          <p class="copyrights footer__text">Copyright © 2020 Crocoblock, Inc. All rights reserved</p>
+        </div>
+        <div class="footer__bottom_right">
+          <a href="#" class="footer__text">Privacy Policy</a>
+          <a href="#" class="footer__text">Terms</a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+
+  </script>
+
+</body>
+
+</html>
