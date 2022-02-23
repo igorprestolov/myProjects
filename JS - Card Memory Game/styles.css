@@ -1,0 +1,202 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+  font-family: 'myriad pro';
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #a29c9b;
+  letter-spacing: 0.4px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+  background: linear-gradient(90deg, rgba(2,0,36,0.46262254901960786) 0%, rgba(9,121,92,0.8883928571428571) 49%, rgba(0,212,255,0.5914740896358543) 100%);
+/* background-image: url(./img/background.jpg); */
+}
+* {
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.game-container {
+  position: relative;
+  width: 600px;
+  min-height: 400px;
+  margin: 200px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: rgba(194, 194, 194, 0.5);
+  border-radius: 15px;
+}
+
+.start-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+
+.start-container > input {
+  background-color: transparent;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.counter {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -40%;
+  color: black;
+  background: rgb(9,36,0);
+  background: linear-gradient(90deg, rgba(9,36,0,0.896796218487395) 21%, rgba(121,9,70,0.8883928571428571) 49%, rgba(107, 124, 8, 0.591) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.click-count {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.count {
+  height: 100px;
+  font-size: 100px;
+  line-height: 1;
+}
+
+.start-btn {
+  padding: 10px 20px;
+  background-color: seagreen;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  opacity: 1;
+  animation-name: appear;
+  animation-duration: 1s;
+  margin: auto;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes green-win {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card {
+  margin: 20px;
+  width: 75px;
+  height: 100px;
+  background-color: rgba(38, 188, 214, 0.4);
+  padding: 4px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  border: 10px solid transparent;
+  border-radius: 15px;
+  box-shadow: 4px 4px 11px rgba(0, 0, 0, 0.5);
+  transform-style: preserve-3d;
+  transition: transform 0.2s linear, box-shadow 0.1s linear, background-color 0.2s linear;
+}
+
+.card:active {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  transform: scale(0.9);
+}
+
+.card_back-face {
+  background-image: url(./img/joker.png);
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.card.red {
+  background-color: rgba(255, 97, 86, 0.8);
+}
+
+.card.green {
+  background-color: rgba(0, 255, 21, 0.4);
+  animation-name: green-win;
+  animation-duration: .5s;
+}
+
+
+.card_front-face[data-number*="1_"] {
+  background-image: url(./img/clown.png);
+}
+.card_front-face[data-number*="2_"] {
+  background-image: url(./img/clown_2.png)
+}
+.card_front-face[data-number*="3_"] {
+  background-image: url(./img/clown_3.png);
+}
+.card_front-face[data-number*="4_"] {
+  background-image: url(./img/clown_4.png);
+}
+.card_front-face[data-number*="5_"] {
+  background-image: url(./img/clown_5.png);
+}
+.card_front-face[data-number*="6_"] {
+  background-image: url(./img/clown_6.png);
+}
+.card_front-face[data-number*="7_"] {
+  background-image: url(./img/clown_7.png);
+}
+.card_front-face[data-number*="8_"] {
+  background-image: url(./img/clown_8.png)
+}
+.card_front-face[data-number*="9_"] {
+  background-image: url(./img/clown_9.png)
+}
+.card_front-face[data-number*="10_"] {
+  background-image: url(./img/clown_10.png)
+}
+
+
