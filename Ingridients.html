@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Input Page</title>
+    <style>
+/* Google Font (optional but recommended) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e1e2f, #2b0f14);
+    color: #ffffff;
+}
+
+/* Main Card */
+.calculator {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 40px;
+    width: 350px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Title */
+.calculator h1 {
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #ff4d4d;
+}
+
+/* Input */
+input {
+    width: 100%;
+    display: flex;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    transition: 0.3s ease;
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 0 2px #ff4d4d;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #ff4d4d, #cc0000);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.4);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Result Box */
+#result {
+  width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    min-height: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 77, 77, 0.3);
+    font-weight: 500;
+    transition:
+    </style>
+</head>
+<body>
+
+    <h2>Кровавая Мэри</h2>
+
+    <input type="text" id="userInput" placeholder="Введите желаемый объем Кровавой Мэри">
+    <button onclick="showResult()">Расчитать</button>
+
+    <div id="result"></div>
+
+   <script>
+     
+let vodka = 50;
+let tomatoJuice = 120;
+let lemonJuice = 10;
+let tabasco = 1;
+let worcester = 1;
+// желаемый объём напитк
+let outputField = document.getElementById("result");
+function showResult() {
+  let volume = document.getElementById("userInput").value;
+  let k = volume / (vodka + tomatoJuice + lemonJuice + tabasco + worcester);
+  let resultAnswer = "\nВам потребуется: \n" + Math.round(vodka * k) + "мл водки \n" + Math.round(tomatoJuice * k) + "мл томатного сока \n" + Math.round(lemonJuice * k) + "мл лимонного сока \n" + Math.round(tabasco * k) + "мл табаско \n";
+  outputField.innerText = resultAnswer;
+}
+    </script>
+
+</body>
+</html>

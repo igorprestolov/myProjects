@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple JS Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-box {
+      background: #1c1c1c;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+    }
+
+    input {
+      background: #2a2a2a;
+      color: #fff;
+    }
+
+    button {
+      background: #4caf50;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #43a047;
+    }
+
+    .result {
+      margin-top: 15px;
+      color: #9cff9c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-box">
+    <h2>Simple Form</h2>
+<p> как тебя зовут</p>
+    <input type="text" id="inputOne" placeholder="Enter first value">
+    <p>сколько тебе лет</p>
+    <input type="text" id="inputTwo" placeholder="Enter second value">
+
+    <button onclick="handleSubmit()">Submit</button>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    function handleSubmit() {
+      const valueOne = document.getElementById("inputOne").value;
+      const valueTwo = document.getElementById("inputTwo").value;
+
+      if (!valueOne || !valueTwo) {
+        document.getElementById("result").innerText =
+          "Please fill in both fields.";
+        return;
+      }
+
+      document.getElementById("result").innerText =
+        `Чекураха ты овечья, ${valueOne} ${valueTwo} лет`;
+    }
+  </script>
+
+</body>
+</html>

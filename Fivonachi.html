@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Airy Form</title>
+<style>
+    :root {
+        --phi: 1.618;
+        --gold: #d4af37;
+        --gold-dark: #b9932f;
+        --deep: #1a1a1a;
+        --soft: #faf7ef;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Cormorant Garamond", "Georgia", serif;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:
+            radial-gradient(circle at 70% 30%, rgba(212,175,55,0.15), transparent 60%),
+            linear-gradient(135deg, #1c1c1c, #2a2a2a);
+        color: var(--soft);
+    }
+
+    .card {
+        width: 100%;
+        max-width: 420px;
+        padding: calc(30px * var(--phi));
+        border-radius: 21px;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(212,175,55,0.25);
+        box-shadow: 0 34px 55px rgba(0,0,0,0.45);
+        display: flex;
+        flex-direction: column;
+        gap: calc(12px * var(--phi));
+    }
+
+    h1 {
+        font-size: calc(18px * var(--phi));
+        font-weight: 500;
+        text-align: center;
+        letter-spacing: 1px;
+        color: var(--gold);
+    }
+
+    input {
+        padding: 14px 18px;
+        border-radius: 13px;
+        border: 1px solid rgba(212,175,55,0.35);
+        font-size: 16px;
+        background: rgba(255,255,255,0.07);
+        color: var(--soft);
+        transition: 0.3s ease;
+    }
+
+    input::placeholder {
+        color: rgba(255,255,255,0.5);
+    }
+
+    input:focus {
+        border-color: var(--gold);
+        box-shadow: 0 0 0 4px rgba(212,175,55,0.15);
+    }
+
+    button {
+        padding: 14px;
+        border-radius: 13px;
+        border: none;
+        background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+        color: #1a1a1a;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.4s ease;
+    }
+
+    button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 25px rgba(212,175,55,0.35);
+    }
+
+    .result {
+        min-height: calc(30px * var(--phi));
+        padding: 14px;
+        border-radius: 13px;
+        background: rgba(212,175,55,0.08);
+        border: 1px dashed rgba(212,175,55,0.4);
+        font-size: 15px;
+        color: var(--soft);
+    }
+
+    @media (max-width: 480px) {
+        .card {
+            padding: 30px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>Fibonachi form</h1>
+    
+    <input type="text" id="input1" placeholder= "Введите меньшее число" />
+    <input type="text" id="input2" placeholder= "Введите болшее число" />
+    
+    <button onclick="fibanachi()">Submit</button>
+    
+    <div class="result" id="result"></div>
+</div>
+
+<script>
+
+const resultBox = document.getElementById("result");
+
+function fibanachi() {
+  resultBox.textContent = "";
+  let firstNumber = parseInt(document.getElementById("input1").value);
+ let maxNumber = parseInt(document.getElementById("input2").value);
+ if (firstNumber > 0) {
+  let secondNumber = firstNumber;
+  while (secondNumber < maxNumber) {
+  let endNumber = firstNumber + secondNumber; 
+  resultBox.textContent += `${secondNumber} \n`;
+  firstNumber = secondNumber;
+  secondNumber = endNumber;
+    } 
+  }
+}
+</script>
+
+</body>
+</html>
