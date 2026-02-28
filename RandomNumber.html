@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Input Page</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", "Segoe UI", sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+    }
+
+    .card {
+        background: white;
+        padding: 40px;
+        width: 350px;
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .input-group {
+        margin-bottom: 15px;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        border-radius: 12px;
+        border: 1px solid #ddd;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    input:focus {
+        border-color: #667eea;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(102,126,234,0.2);
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        border-radius: 12px;
+        border: none;
+        background: #667eea;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background: #5563d6;
+        transform: translateY(-2px);
+    }
+
+    .result {
+        margin-top: 20px;
+        padding: 15px;
+        border-radius: 12px;
+        background: #f4f6ff;
+        min-height: 40px;
+        font-weight: 500;
+        color: #333;
+        word-wrap: break-word;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h2>Simple Calculator</h2>
+
+    <div class="input-group">
+        <input type="text" id="input1" placeholder="Enter first value">
+    </div>
+
+    <div class="input-group">
+        <input type="text" id="input2" placeholder="Enter second value">
+    </div>
+
+    <button onclick="randomNumber()">Submit</button>
+
+    <div class="result" id="resultBox"></div>
+</div>
+
+<script>
+function randomNumber () {
+
+let n = document.getElementById("input1").value;
+let m = document.getElementById("input2").value;
+let range = Math.abs(n-m);
+let minNumber = Math.min(n,m);
+let randomValue = Math.round(minNumber + Math.random() * range);
+
+document.getElementById("resultBox").innerText = randomValue;
+};
+
+</script>
+
+</body>
+</html>
